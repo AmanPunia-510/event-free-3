@@ -594,6 +594,18 @@ form {
   width: 80%;
 }
 
+.nav-shadow {
+  position: fixed;
+  background-color: var(--fourth-color);
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
 input:checked~.navbar-item {
   left: 0;
 }
@@ -655,6 +667,10 @@ input:checked~.navbar-item {
   .home-feed {
     margin-top: 30px;
   }
+
+  .mt-90-lg {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width:768px) {
@@ -669,16 +685,8 @@ input:checked~.navbar-item {
     margin-top: 40px;
   }
 
-  .mt-90-md {
+  .mt-90 {
     margin-top: 90px;
-  }
-
-  .nav-shadow {
-    position: fixed;
-    background-color: var(--fourth-color);
-    width: 100%;
-    top: 0;
-    z-index: 1;
   }
 
   .image-input-post-comment {

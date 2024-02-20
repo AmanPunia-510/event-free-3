@@ -19,6 +19,7 @@
   --sevnth-5E5-color: #5E5F66;
   --eight-color-F1F2F5: #F1F2F5;
   --ninth-color-18205C: #18205C;
+  --bgc-e5e5: #E5E5E5;
 
 
   --font-size-xl-lg-12: 12px;
@@ -283,6 +284,10 @@
   line-height: 150%;
 }
 
+.line-height-54 {
+  line-height: 54px;
+}
+
 .blue-color {
   color: var(--primary-color);
 }
@@ -343,8 +348,13 @@
 }
 
 .logout-button {
-  padding: 11px 28px;
+  /* padding: 11px 28px; */
   border-radius: 23px;
+  width: 118px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-color);
   border: none;
   cursor: pointer;
@@ -352,8 +362,19 @@
 
 .logout-button:hover {
   background-color: var(--fourth-color);
-  box-shadow: 5px 6px 30px 0px var(--fifth-color);
+  border: 1px solid var(--primary-color);
   color: var(--primary-color);
+}
+
+.create-button:hover {
+  background-color: var(--fourth-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.select-button:hover {
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
 }
 
 .navbar {
@@ -362,21 +383,6 @@
 
 .nav-shadow {
   box-shadow: 0px 8px 35px 0px #0000000D;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: -10px;
-  right: 18px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 7px;
-  border-radius: 1px;
-  background: none;
 }
 
 .event-item1 {
@@ -613,7 +619,6 @@ footer {
   width: 208px;
   height: 56px;
   border-radius: 36px;
-  padding: 11px 28px 11px 28px;
 }
 
 .usename-paragraph {
@@ -648,6 +653,124 @@ form {
   border-radius: 50px;
   object-fit: cover;
   height: 100%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: -10px;
+  right: 18px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 1px;
+  background: none;
+}
+
+.create-post-box {
+  padding: 26px 42px;
+}
+
+.para-create-post {
+  margin-bottom: 25px;
+}
+
+.div-title {
+  margin-bottom: 14px;
+}
+
+.title {
+  padding: 15px 28px;
+  border: 1px solid #9CA1BE;
+  border-radius: 35px;
+  outline: none;
+  width: 100%;
+}
+
+.create-post-box {
+  background-color: var(--fourth-color);
+  border-radius: 30px;
+  width: 90%;
+}
+
+.post-description {
+  border: 1px solid #9CA1BE;
+  border-radius: 35px;
+  width: 100%;
+  height: 263px;
+  padding: 15px 28px;
+  outline: none;
+  resize: none;
+}
+
+.select-button {
+  padding: 11px 28px;
+  border-radius: 35px;
+  border: none;
+  background-color: var(--bgc-e5e5);
+}
+
+.post-description {
+  margin-bottom: 25px;
+}
+
+.create-button {
+  padding: 11px 28px;
+  border-radius: 35px;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.box-in-js {
+  display: unset;
+  width: 84%;
+}
+
+.upper-box-with-height {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 30%);
+}
+
+.upper-box-js {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  backdrop-filter: blur(5px);
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+#events {
+  font-family: 'Poppins';
+  font-size: var(--font-size-xl-lg-20);
+  font-weight: 400;
+  line-height: 30px;
+  padding-right: 25px;
+  color: var(--secondry-color);
+  outline: none;
+  border: none;
+}
+
+.event-box {
+  border: 1px solid #9CA1BE;
+  border-radius: 35px;
+  padding: 15px 28px;
+  margin-left: 15px;
+  outline: none;
+  color: var(--secondry-color);
 }
 
 .navbar-item.show {
@@ -741,13 +864,21 @@ form {
     margin-top: 40px;
   }
 
-  /*   
-  .mt-90 {
-    margin-top: 90px;
-  } */
+  .div-title {
+    flex-wrap: wrap;
+  }
+
+  .event-box {
+    width: 100%;
+    margin-left: unset;
+  }
 
   .image-input-post-comment {
     flex-direction: column;
+  }
+
+  .title {
+    margin-bottom: 20px;
   }
 
   .group-img-or-input {
@@ -832,5 +963,18 @@ form {
 
   .mt-90-sm {
     margin-top: unset;
+  }
+
+  .select-create {
+    flex-wrap: wrap;
+  }
+
+  .select-button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .create-button {
+    width: 100%;
   }
 }

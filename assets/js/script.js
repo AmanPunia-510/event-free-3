@@ -1,3 +1,5 @@
+// navbar
+
 let menu = document.querySelector(".menuicons");
 let navItems = document.querySelector(".navbar-item");
 
@@ -5,10 +7,13 @@ menu.addEventListener("click", function () {
     navItems.classList.toggle("show")
 })
 
-// Get the button
+
+// for comeback on top
+
+
+
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -19,8 +24,27 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+// for create post
+
+let post_comment = document.querySelector(".post-comment");
+let boxWithHeight = document.querySelector(".upper-box-with-height");
+let body = document.querySelector("body");
+let createbutton = document.querySelector(".create-button");
+let createpostbox = document.querySelector(".create-post-box")
+
+post_comment.addEventListener("click", function () {
+    boxWithHeight.style.display = "flex"
+    boxWithHeight.classList.add("upper-box-js")
+    body.classList.add("overflow")
+})
+
+createbutton.addEventListener("click", function () {
+    boxWithHeight.style.display = "none"
+    body.classList.remove("overflow")
+})

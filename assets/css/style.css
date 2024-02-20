@@ -364,6 +364,21 @@
   box-shadow: 0px 8px 35px 0px #0000000D;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: -10px;
+  right: 18px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 1px;
+  background: none;
+}
+
 .event-item1 {
   border-radius: 20px;
   background: var(--fourth-color);
